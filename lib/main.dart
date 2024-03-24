@@ -1,3 +1,5 @@
+import 'package:GAANA/models/playlist_model.dart';
+import 'package:GAANA/screens/playlist_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:GAANA/screens/home_screen.dart';
 import 'package:GAANA/screens/song_screen.dart';
@@ -20,11 +22,15 @@ class MyApp extends StatelessWidget {
                 bodyColor: Colors.white,
                 displayColor: Colors.white,
               )),
-      home: const SongScreen(),
+      home: const HomeScreen(),
       getPages: [
         GetPage(name: '/', page: () => const HomeScreen()),
         GetPage(name: '/song', page: () => const SongScreen()),
-        GetPage(name: '/playlist', page: () => const HomeScreen()),
+        GetPage(
+            name: '/playlist',
+            page: () => PlaylistScreen(
+                  playlist: Get.arguments as Playlist,
+                )),
       ],
     );
   }

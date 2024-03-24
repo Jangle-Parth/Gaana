@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class PlaylistCard extends StatelessWidget {
+  final Playlist playlists;
   const PlaylistCard({
     Key? key,
     required this.playlists,
   }) : super(key: key);
-  final Playlist playlists;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(

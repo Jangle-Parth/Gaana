@@ -32,24 +32,38 @@ class HomeScreen extends StatelessWidget {
             children: [
               const _DiscoverMusic(),
               _TrendingMusic(songs: songs),
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Column(children: [
-                  SectionHeader(title: "Playlists"),
-                  ListView.builder(
-                      shrinkWrap: true,
-                      padding: EdgeInsets.only(top: 20),
-                      physics: NeverScrollableScrollPhysics(),
-                      itemCount: playlists.length,
-                      itemBuilder: (context, index) {
-                        return PlaylistCard(playlists: playlists[index]);
-                      })
-                ]),
-              )
+              _PlaylistMusic(playlists: playlists)
             ],
           ),
         ),
       ),
+    );
+  }
+}
+
+class _PlaylistMusic extends StatelessWidget {
+  const _PlaylistMusic({
+    super.key,
+    required this.playlists,
+  });
+
+  final List<Playlist> playlists;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(20),
+      child: Column(children: [
+        SectionHeader(title: "Playlists"),
+        ListView.builder(
+            shrinkWrap: true,
+            padding: EdgeInsets.only(top: 20),
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: playlists.length,
+            itemBuilder: (context, index) {
+              return PlaylistCard(playlists: playlists[index]);
+            })
+      ]),
     );
   }
 }
@@ -176,8 +190,7 @@ class _CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         Container(
           margin: const EdgeInsets.only(right: 20),
           child: const CircleAvatar(
-            backgroundImage: NetworkImage(
-                'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fmusic-icon-or-logo-for-apps-vector-28529812&psig=AOvVaw0ACcSgfgJtrQhK0f8sq9HQ&ust=1711006790382000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKju0Y2rgoUDFQAAAAAdAAAAABAE'),
+            backgroundImage: AssetImage('assets/images/JP.jpg'),
           ),
         )
       ],
