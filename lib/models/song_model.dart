@@ -39,13 +39,13 @@ class Song {
     Song(
       title: 'Khalsa',
       description: 'Daler Mehendi',
-      url: 'assets/music/',
+      url: 'assets/music/Raj Karega Khalsa.mp3',
       coverUrl: 'assets/images/raj karega khalsa.jpg',
     ),
     Song(
       title: 'Sabashiyan',
       description: 'Shilpa Rao',
-      url: 'assets/music/Raj Karega Khalsa.mp3',
+      url: 'assets/music/Sabashiyan.mp3',
       coverUrl: 'assets/images/Sabashiyan.jpg',
     ),
     Song(
