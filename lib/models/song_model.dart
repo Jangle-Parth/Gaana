@@ -39,25 +39,25 @@ class Song {
     Song(
       title: 'Khalsa',
       description: 'Daler Mehendi',
-      url: 'assets/music/Pitah se hai naam tera.mp3',
+      url: 'assets/music/',
       coverUrl: 'assets/images/raj karega khalsa.jpg',
     ),
     Song(
       title: 'Sabashiyan',
       description: 'Shilpa Rao',
-      url: 'assets/music/Pitah se hai naam tera.mp3',
+      url: 'assets/music/Raj Karega Khalsa.mp3',
       coverUrl: 'assets/images/Sabashiyan.jpg',
     ),
     Song(
       title: 'Soorma Theme',
       description: 'Shankar M.',
-      url: 'assets/music/Pitah se hai naam tera.mp3',
+      url: 'assets/music/Soorma Theme.mp3',
       coverUrl: 'assets/images/Soorma Theme.jpg',
     ),
     Song(
       title: 'Sultan Theme',
       description: 'Sukhwinder S.',
-      url: 'assets/music/Pitah se hai naam tera.mp3',
+      url: 'assets/music/Sultan Theme.mp3',
       coverUrl: 'assets/images/Sultan Theme.jpg',
     ),
   ];
