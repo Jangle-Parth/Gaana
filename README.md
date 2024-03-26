@@ -1,19 +1,53 @@
-# GAANA
+# Flutter Quiz App
 
-A new Flutter project.
+Welcome to the Expense Tracker App! Spend Wisely.
 
-## Getting Started
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
 
-This project is a starting point for a Flutter application.
+## Introduction
 
-A few resources to get you started if this is your first Flutter project:
+This is a Music Player App which will enhance your Music Listening Experience
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Curated Playlist's
 
-# Gaana
-# Gaana
+## Screenshots
+<p align="center">
+  <img src="/screenshots/screenshot1.jpeg" alt="Home Screen" width="150">
+  <img src="/screenshots/screenshot2.jpeg" alt="Song Screen" width="150">
+  <img src="/screenshots/screenshot3.jpeg" alt="Playlist Screen" width="150">
+  
+
+</p>
+
+<p align="center">
+  <em>Home Screen</em> | <em>Song Screen</em> | <em>Playlist Screen</em> |
+</p>
+
+
+## Installation
+
+To Download The Apk:
+
+   ```bash
+   https://drive.google.com/file/d/1LOd1jLZEHoXrmDjsNkq9B7DffQ0g3arm/view?usp=drive_link
+   ```
+To Clone The Repository on Your Machine:
+
+  ```bash
+   https://github.com/Jangle-Parth/Gaana.git
+   ```
+
+## Usage
+Once the app is running, you can:
+
+- Play Music
+- Play Playlist
+
+Feel free to add different features
